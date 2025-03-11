@@ -5,7 +5,7 @@ This project contains a collection of custom widgets designed for use with OBS (
 
 ## Widgets
 
-### To Do List
+### To Do List - [Try it!](https://daglia.github.io/obs-widgets/widgets/to-do-list/)
 
 A simple To Do List widget that allows users to add, complete, and delete tasks, with the option to delete tasks on click.
 
