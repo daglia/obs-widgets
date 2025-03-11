@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Pixelify Sans";
+  src: url(fonts/PixelifySans-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Tiny5";
+  src: url(fonts/Tiny5-Regular.ttf);
+}
+
+body {
+  font-family: "Tiny5", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: gray;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: left;
+  height: 100vh;
+}
+
+input {
+  font-family: "Tiny5", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border: 2px solid #333;
+}
+
+button {
+  font-family: "Tiny5", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border: 2px solid #333;
+}
+
+.transparent {
+  opacity: 0;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To Do List</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/global.css">
+</head>
+<body>
+    <div class="container">
+        <ul id="taskList"></ul>
+        <form id="taskForm" class="transparent" onsubmit="addTask()" autocomplete="off">
+            <input type="text" id="taskInput" placeholder="Enter a TASK">
+            <button type="submit">ADD</button>
+            <label id="delete-on-click-label">
+                <input type="checkbox" id="delete-on-click-input" onclick="setDeleteOnClick()">
+                <span>DELETE on click</span>
+            </label>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</html>
