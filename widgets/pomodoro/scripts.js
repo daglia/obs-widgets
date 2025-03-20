@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", updateTimer);
 
 const WORK_TIME = 25 * 60;
 const BREAK_TIME = 5 * 60;
-const beep = new Audio("/assets/sounds/beep.wav");
+const beep = new Audio("../../assets/sounds/beep.wav");
 beep.loop = true;
 let timer;
 let isWorking = true;
@@ -33,9 +33,15 @@ function startPauseWorkTimer() {
 function updateTimer() {
   const minutes = Math.floor(timeLeft / 60);
   const seconds = timeLeft % 60;
-  document.getElementById("timer").textContent = `${minutes
+  const timerElement = document.getElementById("timer");
+  timerElement.textContent = `${minutes.toString().padStart(2, "0")}:${seconds
     .toString()
-    .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+    .padStart(2, "0")}`;
+  if (minutes === 0 && seconds <= 5) {
+    timerElement.style.color = "crimson";
+  } else {
+    timerElement.style.color = isWorking ? "white" : "dodgerblue";
+  }
 }
 
 function updateStartPauseButton() {
